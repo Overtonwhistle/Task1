@@ -9,13 +9,14 @@ import org.apache.logging.log4j.Logger;
 
 public class TriangleFileDataParser {
 
-	private static final Logger log = LogManager.getLogger(TriangleFileDataParser.class.getName());
+//	private static final Logger log = LogManager.getLogger(TriangleFileDataParser.class.getName());
+	private static final Logger log = LogManager.getLogger();
 
 	public static final String VALUES_DELIMITER = ",";
 
 	public List<double[]> getCoordinatesList(List<String> triangleInputCoordinatesList) {
 
-		List<double[]> listOf—oordinatesArrays = new ArrayList<>();
+		List<double[]> listOfCoordinatesArrays = new ArrayList<>();
 
 		for (String triangleString : triangleInputCoordinatesList) {
 			String[] coordinatesStringArray = triangleString.split(VALUES_DELIMITER);
@@ -37,10 +38,10 @@ public class TriangleFileDataParser {
 						+ "], line will be skipped!");
 				continue;
 			}
-			listOf—oordinatesArrays.add(coordinatesArray);
+			listOfCoordinatesArrays.add(coordinatesArray);
 		}
 
-		return listOf—oordinatesArrays;
+		return listOfCoordinatesArrays;
 	}
 
 }

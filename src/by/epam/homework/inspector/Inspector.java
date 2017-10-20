@@ -3,9 +3,6 @@ package by.epam.homework.inspector;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import by.epam.homework.creator.TriangleCreator;
 import by.epam.homework.entity.Point;
 import by.epam.homework.entity.Triangle;
@@ -18,7 +15,7 @@ import by.epam.homework.storage.TriangleStorage;
 
 public class Inspector {
 
-	private static final Logger log = LogManager.getLogger(Inspector.class.getName());
+	// private static final Logger log = LogManager.getLogger();
 
 	public static void main(String[] args) throws TriangleException {
 		// log.error("Test error!");
@@ -69,9 +66,9 @@ public class Inspector {
 		}
 
 		Triangle testTriangle = storage.getTriangleById(1000);
-		System.out.println("DATA:"+storage.getTriangleDateById(1000));
-		testTriangle.setVertexA(new Point(4,2));
-		System.out.println("DATA:"+storage.getTriangleDateById(1000));
+		System.out.println("DATA:" + storage.getTriangleDateById(1000));
+		testTriangle.setVertexA(new Point(4, 2));
+		System.out.println("DATA:" + storage.getTriangleDateById(1000));
 	}
 
 }

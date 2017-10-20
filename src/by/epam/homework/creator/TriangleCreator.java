@@ -22,7 +22,7 @@ import by.epam.homework.validator.TriangleValidator;
 
 public class TriangleCreator {
 
-	private static final Logger log = LogManager.getLogger(TriangleCreator.class.getName());
+	private static final Logger log = LogManager.getLogger();
 	private static final int ARRAY_INDEX_OFFSET = 1;
 
 	TriangleValidator coordinatesValidator = new TriangleValidator();
@@ -31,7 +31,7 @@ public class TriangleCreator {
 	 * Returns a new {@link Triangle} class instance. Takes as parameters three
 	 * {@link Point} class objects
 	 * <p>
-	 * NOTE: Points A B Ñ do not be on the same geometric line, otherwise the method
+	 * NOTE: Points A B ï¿½ do not be on the same geometric line, otherwise the method
 	 * throws an exception.
 	 * 
 	 * @param vertexA
@@ -45,7 +45,6 @@ public class TriangleCreator {
 	 */
 	public Triangle createTriangle(Point vertexA, Point vertexB, Point vertexC)
 			throws TriangleException {
-
 		if (coordinatesValidator.isTriangleExist(vertexA, vertexB, vertexC)) {
 			return new Triangle(IdGenerator.generateNewId(), vertexA, vertexB, vertexC);
 		} else {
@@ -64,19 +63,19 @@ public class TriangleCreator {
 	 * defines three points placed on the same straight line, this input List
 	 * element will be skipped.
 	 * 
-	 * @param listOfÑoordinatesArrays
+	 * @param listOfï¿½oordinatesArrays
 	 *            - {@link List} of double[6] arrays.
 	 * 
 	 * @return {@link List} of {@link Triangle} class instances.
 	 * @throws TriangleException
 	 */
-	public List<Triangle> getTrianglesList(List<double[]> listOfÑoordinatesArrays) {
+	public List<Triangle> getTrianglesList(List<double[]> listOfCoordinatesArrays) {
 
 		List<Triangle> TrianglesList = new ArrayList<>();
 
-		for (int i = 0; i < listOfÑoordinatesArrays.size(); i++) {
+		for (int i = 0; i < listOfCoordinatesArrays.size(); i++) {
 
-			double[] coordinates = listOfÑoordinatesArrays.get(i);
+			double[] coordinates = listOfCoordinatesArrays.get(i);
 
 			if (coordinates.length != 6) {
 				log.log(Level.WARN, "Incorrect number of paraneters in line " + (i + 1)

@@ -206,3 +206,27 @@
 2017-10-14T22:42:11,792 [WARN ] (TriangleCreator.java:52) - Incorrect vertex coordinates.
 2017-10-14T22:42:11,809 [WARN ] (TriangleCreator.java:52) - Incorrect vertex coordinates.
 2017-10-14T22:42:11,812 [WARN ] (TriangleCreator.java:52) - Incorrect vertex coordinates.
+2017-10-20T07:30:55,910 [WARN ] (TriangleFileDataParser.java:23) - Invalid number of parameters: [test hello], line will be skipped!
+2017-10-20T07:30:55,917 [WARN ] (TriangleCreator.java:52) - Incorrect vertex coordinates.
+2017-10-20T07:30:55,917 [WARN ] (TriangleCreator.java:94) - Incorrect vertex coordinates in line 5, this triangle will be skipped!
+2017-10-20T07:31:54,068 [ERROR] (TriangleFileReader.java:35) - File reading error.
+2017-10-20T07:32:14,188 [ERROR] (TriangleFileReader.java:35) - File reading error.
+2017-10-20T07:32:18,718 [ERROR] (TriangleFileReader.java:35) - File reading error.
+2017-10-20T07:34:36,365 [WARN ] (TriangleFileDataParser.java:23) - Invalid number of parameters: [test hello], line will be skipped!
+2017-10-20T07:34:36,373 [WARN ] (TriangleCreator.java:52) - Incorrect vertex coordinates.
+2017-10-20T07:34:36,374 [WARN ] (TriangleCreator.java:94) - Incorrect vertex coordinates in line 5, this triangle will be skipped!
+2017-10-20T07:35:10,990 [WARN ] (TriangleFileDataParser.java:24) - Invalid number of parameters: [test hello], line will be skipped!
+2017-10-20T07:35:10,996 [WARN ] (TriangleCreator.java:52) - Incorrect vertex coordinates.
+2017-10-20T07:35:10,996 [WARN ] (TriangleCreator.java:94) - Incorrect vertex coordinates in line 5, this triangle will be skipped!
+2017-10-20T12:25:08,721 [WARN ] (TriangleFileDataParser.java:24) - Invalid number of parameters: [0,0 3,7 1,3], line will be skipped!
+2017-10-20T12:25:08,723 [WARN ] (TriangleFileDataParser.java:24) - Invalid number of parameters: [bla-bla-bla], line will be skipped!
+2017-10-20T12:25:08,723 [WARN ] (TriangleFileDataParser.java:24) - Invalid number of parameters: [5,6 3,2 4,5], line will be skipped!
+2017-10-20T12:25:08,724 [WARN ] (TriangleFileDataParser.java:24) - Invalid number of parameters: [5,6 w 3,2 z 4,5 zzz], line will be skipped!
+2017-10-20T12:25:08,724 [WARN ] (TriangleFileDataParser.java:24) - Invalid number of parameters: [5,6 3,2 4,5 8,-8.1], line will be skipped!
+2017-10-20T12:25:08,724 [WARN ] (TriangleFileDataParser.java:24) - Invalid number of parameters: [1.1,1.2 -1.2,-5.6 6,3.1], line will be skipped!
+2017-10-20T12:25:08,724 [WARN ] (TriangleFileDataParser.java:24) - Invalid number of parameters: [1.1,1.2. -1..2,-5.6, 6,3.1], line will be skipped!
+2017-10-20T12:25:08,724 [WARN ] (TriangleFileDataParser.java:24) - Invalid number of parameters: [-2,2 3,-4 5,6], line will be skipped!
+2017-10-20T12:25:08,725 [WARN ] (TriangleFileDataParser.java:24) - Invalid number of parameters: [-2,2, -3.1,-4 5,6], line will be skipped!
+2017-10-20T12:31:39,876 [WARN ] (TriangleFileDataParser.java:24) - Invalid number of parameters: [bla-bla-bla], line will be skipped!
+2017-10-20T12:31:39,878 [WARN ] (TriangleFileDataParser.java:37) - Invalid character in line: [5,6,w,3,2,z,4,5,zzz], line will be skipped!
+2017-10-20T12:31:39,878 [WARN ] (TriangleFileDataParser.java:37) - Invalid character in line: [1.1,1.2.,-1..2,-5.6,6,3.1], line will be skipped!

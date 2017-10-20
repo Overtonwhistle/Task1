@@ -15,8 +15,9 @@ import by.epam.homework.exception.TriangleFileReaderException;
 
 public class TriangleFileReader {
 
-	private final static Logger log = LogManager.getLogger(TriangleFileReader.class.getName());
-	private final static String TRIANGLE_DEFAULT_DATA_PATH = "./src/by/epam/homework/files/triangle_data.txt";
+	private final static Logger log = LogManager.getLogger();
+	private final static String TRIANGLE_DEFAULT_DATA_PATH = "./files/points.txt";
+//	private final static String TRIANGLE_DEFAULT_DATA_PATH = "./files/triangle_data.txt";
 
 	public TriangleFileReader() {
 	}
